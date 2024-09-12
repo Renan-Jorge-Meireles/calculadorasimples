@@ -1,24 +1,25 @@
-function calculo(sla)
+function calculo(conta)
 let a = parseFloat(document.getElementById('zeroum').value);
 let b = parseFloat(document.getElementById('zerodois').value);
 let resultado = 0
 
 if (isNaN(a) || isNaN(b)) {
     alert('otario');
-}else{
+}
+else{
 
-
-if(sla == '+'){
+    if(conta == '+'){
     resultado = a + b;
-}
- else if(sla == '-'){
+    }
+    else if(conta == '-'){
     resultado = a - b;
-}
- else if(sla == '*'){
+    }
+    else if(conta == '*'){
     resultado = a * b;
- }
- else if(sla == '/'){
+    }
+    else if(conta == '/'){
     resultado = a / b;
- }
+    }
 }
-document.getElementById('resultado').textContent = "resultado" + resultado
+
+document.getElementById('resultado').textContent = resultado
